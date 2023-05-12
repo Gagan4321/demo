@@ -1,56 +1,92 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Courses</title>
-  <link rel="stylesheet" href="course.css">
-  </head>
-  <body>
-    <div class="navbar">
-      <a href="#home">Home</a>
-      <a href="#courses">Courses</a>
-      <a href="#colleges">Colleges</a>
-      <a href="#colleges">Exam</a>
-    </div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
 
-    <div class="sidenav">
-        <a href="#"><strong> All courses list:</strong></a>
-        <a href="#puc">PUC</a>
-        <a href="#diploma">Diploma</a>
-        <a href="#iti">ITI</a>
-        <a href="#para">Paramedical</a>
-        <a href="#degree">Degree</a>
-        <a href="#be">B.E/B.Tech</a>
-        <a href="#medical">Medical</a>
-        <!-- <a href="#contact">Contact</a> -->
-      </div>
+.card a {
+  border: none;
+  outline: 0;
+  padding: 5px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
 
-      <div class="main">
-        <div class="puc" id="puc"><br>
-            <h3><u>PUC(Pre-University course)</u></h3>
-            <ul>
-                <li>A Pre-University Course (PUC) is an educational program that is typically offered by colleges or universities in some countries, particularly in India. It is a two-year intermediate course that is taken after completing high school and before entering university.</li>
-                <li>The PUC program is designed to prepare students for undergraduate studies by providing them with a strong foundation in various academic subjects, including science, commerce, and humanities. Students can choose a specialization based on their interests and career aspirations.</li>
-                <li>The curriculum of the PUC program includes a combination of theory, practicals, and assignments in different subjects. The program also includes co-curricular activities, such as sports, music, and cultural events, to help students develop their overall personality and skills.</li>
-                <li>Upon completion of the PUC program, students are eligible to take admission in undergraduate courses in various fields such as engineering, medicine, law, commerce, and arts, depending on their specialization.</li>
-            </ul><br>
-            <p>For the full details of all the courses in PUC -> <a href="puc.html" target="_blank">Click here</a></p>
-        </div>
-            <br><br><br>
-            <hr>
-        <div class="diploma" id="diploma">
-            <h3><u>Diploma - Polytechnic</u></h3>
-            <ul>
-                <li>A diploma is a certificate or academic qualification that is awarded by an educational institution, such as a college or university, to a student who has successfully completed a specific course of study. Diplomas can be awarded for a wide range of educational programs, from vocational and technical training to undergraduate and graduate studies.</li>
-                <li>A diploma typically represents a level of academic achievement that is lower than a degree, but higher than a certificate or a high school diploma. Diploma programs may vary in length from a few months to several years, depending on the field of study and the level of education.</li>
-                <li>Diploma programs are designed to provide students with practical knowledge and skills in a specific field, such as business, healthcare, engineering, or technology. They may include both classroom instruction and hands-on training, and may also require students to complete internships or apprenticeships in their chosen field.</li>
-                <li>Diplomas can be used to enhance job prospects, advance careers, or provide a foundation for further academic study. They may also be recognized by professional associations or regulatory bodies in certain industries as a requirement for licensure or certification.
-                </li>
-            </ul><br>
-            <p>For the full details od all the branches in Diploma -> <a href="diploma.html" target="_blank">Click here</p>
-        </div> 
+.card a:hover {
+  opacity: 0.7;
+}
+.container{
+    display:flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+ 
+.card h1{
+  font-size:15px ;
+  text-transform: uppercase;
+}
+.card p{
+  font-size: 12px;
+}
 
-    
-      </div>
-   
-  </body>
+.btn{
+	color: aliceblue;
+}
+@media only screen and (max-width:498px){
+  .container{
+    overflow-x: scroll;
+    white-space:normal;
+  }
+}
+	</style>
+</head>
+<body>
+	<h1>Courses</h1>
+	<div class="container">
+        <div class="card">
+            <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+            <h1>Cources list</h1>
+             
+            <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p> <a href="demo.html" class="btn">Read More &rAarr;</a></p>
+          </div>
+          <div class="card">
+              <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+              <h1>Cources list</h1>
+               
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p> <a href="demo.html" class="btn">Read More &rAarr;</a> </p>
+            </div>
+            <div class="card">
+              <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+              <h1>Cources list</h1>
+               
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p> <a href="demo.html" class="btn">Read More &rAarr;</a> </p>
+            </div>
+            <div class="card">
+              <img src=" puc copy.jpg" alt="Denim Jeans" style="width:60%"   >
+              <h1>Cources list</h1>
+               
+              <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+              <p> <a href="demo.html" class="btn">Read More &rAarr;</a> </p>
+            </div>
+	</div>
+</body>
 </html>

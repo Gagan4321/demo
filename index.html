@@ -1,115 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="EK.jpg" type="image/x-icon">
-    <title>EKS</title>
+   <title>EKS </title>
+   <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="EK.jpg" type="image/x-icon">
 </head>
-<body>
-    <header>
-       
-        <div class="logo-container">
-          <img src="EK.jpg" alt="Your Logo">
-          <h1 style="font-size:px; font-family: 'Courier New', Courier, monospace;">Educate Karnataka</h1>
-        </div> 
-        <div class="dropdown">
-        <img src="search-icon.png" alt="not found" class="search-icon" onclick="myFunction()" class="dropbtn"> 
-          <div id="myDropdown" class="dropdown-content">
-            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-            <a href="new.html" target="_self">About</a>
-            <a href="#base">Base</a>
-            <a href="#blog">Blog</a>
-            <a href="#contact">Contact</a>
-            <a href="#custom">Custom</a>
-            <a href="#support">Support</a>
-            <a href="#tools">Tools</a>
-            <a href="#tools">Tools2</a>
-            <a href="#tools">Tools3</a>
-            <a href="#tools">Tools4</a>
-            <a href="#tools">Tools5</a>
-          </div>
-        </div>
-        
-        <script>
-        /* When the user clicks on the button,
-        toggle between hiding and showing the dropdown content */
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        function filterFunction() {
-          var input, filter, ul, li, a, i;
-          input = document.getElementById("myInput");
-          filter = input.value.toUpperCase();
-          div = document.getElementById("myDropdown");
-          a = div.getElementsByTagName("a");
-          for (i = 0; i < a.length; i++) {
-            txtValue = a[i].textContent || a[i].innerText;
+<body >
+  <div  ></div>
+    <div  >
+      <header >
+        <div class="wrapper">
+          <div class="logo-container"></div>
+          <div class="logo" >EDUCATE KARNATAKA</div> 
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="course.html">Courses</a></li>
+              <li><a href="exam.html">Exam</a></li>
+              <li><a href="college.html">College</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>    
+       </div>
+       <div class="search-container">
+        <div class="search-bar">
+          <input  type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." ></div>
+  <ul id="myUL" class="search">
+    <li><a href="index.html">PUC</a></li>
+    <li><a href="degree.html">ITI</a></li>
+    <li><a href="sh.html">PARAMEDICAL</a></li>
+    <li><a href="index.html">DIploma</a></li>
+    <li><a href="#">ba</a></li>
+    <li><a href="#">bsC</a></li><li><a href="index.html">nda</a></li>
+    <li><a href="degree.html">bcOM</a></li>
+    <li><a href="sh.html">be</a></li>
+    <li><a href="index.html">btECH</a></li>
+    <li><a href="#">short term courses</a></li>
+    <li><a href="#">s</a></li>
+    <li><a href="#">Cindy</a></li>
+  </ul>
+  <script>
+    function myFunction() {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
-              a[i].style.display = "";
+                li[i].style.display = "";
             } else {
-              a[i].style.display = "none";
+                li[i].style.display = "none";
             }
-          }
         }
-        </script>
-
-
-        <!-- <div class="side-bar">
-          <input type="checkbox" id="menu-bar">
-          <label for="menu-bar">Menu</label>
-        
-        </div> -->
-
-
-       
-
-
-        <nav>
-         <div class="navbar-ul">
-            <ul>
-                <li><a href="/courses">Courses</a></li>
-                <li><a href="/exams">Exams</a></li>
-                <li><a href="/cobtactus">Contact us</a></li>
-                <li><a href="/cobtactus">About us</a></li>
-              </ul>
-         </div>
-        </nav>
-          </div>
-
-          <input type="checkbox" name="" id="menu-bar">
-          <!-- <label for="menu-bar">Menu</label> -->
-          <label for="menu-bar"><img src="three2.png" id="side-bar" alt=""></label>
-          <nav class="navbar">
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li class="course"><a href="#">Courses </a></li>
-                  <li  class="college"><a href="#">Colleges </i></a></li>
-                  <li class="exam"><a href="#">Exams </a></li>
-                  <!-- <li><a href="#"><img src="three2.png" id="three" alt=""></a></li> -->
-              </ul>
-            </nav>
-          
-          
-      </header>
-    <nav>
-      <div class="content-select">
-        <h3>WELCOME  TO EDUCATE KARNATAKA</h3>
-        <img src="student photo.jpeg" alt="" width="400px" height="200px ">
-      </div>
-      
-    </nav>
-    <section>
-          
-    </section>
-    <aside>
-
-    </aside>
-    <footer>
-
+      }
+    </script>
+  </div>
+  </div>
+       <div class="text">
+          <h1>WELCOME TO EDUCATE KARNATAKA</h1>
+          <p>Education is the process of acquiring knowledge, skills, values, and attitudes through various forms 
+              of learning. It plays a crucial role in personal development, social mobility, and economic growth. </p>
+              <h2>what are you comleted now </h2>
+          <a href="sh.html">sslc</a>
+          <a href="sh.html">puc</a>
+          <h4>Are you looking for job orientend Courses</h4>
+          <a href="sh.html">short term courses</a>
+       </div>
+  </header> 
+  <footer>
+      <p>&copy; 2023 EDUCATE KARNATAKA. All Rights Reserved.</p>
+      <a href="mailto:educatekarnataka@gmail.com">support</a></p>
     </footer>
+    </div>
+    
+      <script>
+        const dropdownInput = document.getElementById("myInput");
+        const dropdownMenu = document.getElementById("myUL");
+      
+      dropdownInput.addEventListener("click", function() {
+        if (dropdownMenu.style.display === "block") {
+          dropdownMenu.style.display = "none";
+        } else {
+          dropdownMenu.style.display = "block";
+        }
+      });
+      </script>        
 </body>
-</html>
+</html> 
