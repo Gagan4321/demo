@@ -64,11 +64,6 @@ body {
   padding: 29px 10px;
 }
 
-.main .diploma h2{
-   padding-top: 60px;
-}
-
-
  .main section{
   padding-top: 29px;
 }
@@ -77,4 +72,32 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+@media(max-width:850px){
+  
+  .navbar a {
+    text-align: center;
+    display: inline-flex;
+    color: #eeeeee;
+    padding: 15px;
+    padding-left: 9%;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
 
+@media(max-width:600px){
+  /* body{
+    background-color: black;
+  } */
+  .navbar a {
+    text-align: center;
+    display: inline-flex;
+    color: #eeeeee;
+    padding: 15px;
+    padding-left: 6%;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}

@@ -1,18 +1,13 @@
 body {
     font-family: Verdana,sans-serif;
+    margin: 0;
     /* font-family: "Lato", sans-serif; */
-  }
-  
-  header .navbar{
-    position: fixed;
-    color: white;
-    
   }
   
   .navbar {
     /* margin: 0; */
     overflow: hidden;
-    background-color: #666666;
+    background-color: #730a0a;
     position: fixed;
     top: 0;
     width: 100%;
@@ -39,13 +34,13 @@ body {
     width:25%;
     position: fixed;
     z-index: 1;
-    top: 54px;
+    top: 53px;
     left: 0;
     background-color: #f1f1f1;
     overflow-x: hidden;
     padding-top: 20px;
   }
-
+  
   .sidenav a {
     /* text-align: ; */
     padding: 16px 8px 20px 16px;
@@ -53,7 +48,9 @@ body {
     font-size: 20px;
     color: rgb(4, 4, 37);
     /* border: 2px solid black; */
+    
     display: block;
+    
   }
   
   .sidenav a:hover {
@@ -67,59 +64,41 @@ body {
     padding: 29px 10px;
   }
   
-  .main div{
-    padding-top: 20px;
-  }
-  
-  .main section{
-    padding-top: 30px;
-  }
-  
-  /* .main .tabcontent ol li a{
-    text-decoration: none;
-  }
-  
-  .main .tabcontent ol li a:hover{
-    text-decoration: underline;
-    color: rgb(233, 10, 10);
-     */
+   .main section{
+    padding-top: 29px;
   }
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
   @media(max-width:850px){
-    /* body{
-        background-color: #730a0a;
-    } */
+    
     .navbar a {
-        text-align: center;
-        display: inline-flex;
-        color: #eeeeee;
-        padding: 15px;
-        padding-left: 10%;
-        font-weight: bolder;
-        text-decoration: none;
-        font-size: 18px;
+      text-align: center;
+      display: inline-flex;
+      color: #eeeeee;
+      padding: 15px;
+      padding-left: 9%;
+      font-weight: bolder;
+      text-decoration: none;
+      font-size: 18px;
+    }
   }
-
-  @media(max-width:650px){
-    /* body{
-        background-color: #0c0303;
-    } */
-    .navbar a {
-        text-align: center;
-        display: inline-flex;
-        color: #eeeeee;
-        padding: 15px;
-        padding-left: 6%;
-        font-weight: bolder;
-        text-decoration: none;
-        font-size: 18px;
-  }
-
   
-}
+  @media(max-width:600px){
+    /* body{
+      background-color: black;
+    } */
+    .navbar a {
+      text-align: center;
+      display: inline-flex;
+      color: #eeeeee;
+      padding: 15px;
+      padding-left: 6%;
+      font-weight: bolder;
+      text-decoration: none;
+      font-size: 18px;
+    }
   }
+  
