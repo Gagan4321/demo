@@ -63,6 +63,7 @@ body {
     margin-left: 25%; /* Same as the width of the sidenav */
     font-size: 25px; /* Increased text to enable scrolling */
     padding: 29px 10px;
+    text-align: justify;
   }
   
   .main .diploma h2{
@@ -111,20 +112,20 @@ body {
       display: inline-flex;
       color: #eeeeee;
       padding: 15px;
-      padding-left: 10%;
+      padding-left: 7%;
       font-weight: bolder;
       text-decoration: none;
       font-size: 25px;
     }
   } 
 
-  @media(max-width:799px){
+  @media(max-width:991px){
     .navbar a {
       text-align: center;
       display: inline-flex;
       color: #eeeeee;
       padding: 15px;
-      padding-left: 5%;
+      padding-left: 3%;
       font-weight: bolder;
       text-decoration: none;
       font-size: 25px;
@@ -137,9 +138,21 @@ body {
       display: inline-flex;
       color: #eeeeee;
       padding: 15px;
-      padding-left: 2%;
+      padding-left: 1%;
       font-weight: bolder;
       text-decoration: none;
       font-size: 25px;
     }
+    @media(max-width:459px){ 
+      .navbar a {
+        text-align: center;
+        display: inline-flex;
+        color: #eeeeee;
+        padding: 15px;
+        padding-left: 0%;
+        font-weight: bolder;
+        text-decoration: none;
+        font-size: 25px;
+      }
   }
+}
